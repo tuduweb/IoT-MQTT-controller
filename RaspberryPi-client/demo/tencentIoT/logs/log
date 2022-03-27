@@ -1,0 +1,4 @@
+2022-03-27 21:43:16,562.562 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-27 21:43:16,563.563 [log.py:54] - INFO - connect with key...
+2022-03-27 21:43:16,564.564 [log.py:46] - DEBUG - connect_async (.iotcloud.tencentdevices.com:8883)
+2022-03-27 21:43:16,566.566 [log.py:58] - ERROR - LoopThread thread Exception:encoding with 'idna' codec failed (UnicodeError: label empty or too long)
