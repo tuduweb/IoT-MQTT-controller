@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "properties": [
+    {
+      "id": "imageUrl",
+      "name": "图片地址",
+      "desc": "用于传输存储图片地址",
+      "mode": "rw",
+      "define": {
+        "type": "string",
+        "min": "0",
+        "max": "2048"
+      },
+      "required": false
+    },
+    {
+      "id": "image",
+      "name": "image",
+      "desc": "回传图片地址",
+      "mode": "r",
+      "define": {
+        "type": "string",
+        "min": "0",
+        "max": "2048"
+      },
+      "required": false
+    }
+  ],
+  "events": [
+    {
+      "id": "last_image",
+      "name": "更新最新图片",
+      "desc": "",
+      "type": "info",
+      "params": [
+        {
+          "id": "image",
+          "name": "最新图片",
+          "define": {
+            "type": "string",
+            "min": "0",
+            "max": "2048"
+          }
+        }
+      ],
+      "required": false
+    }
+  ],
+  "actions": [
+    {
+      "id": "grapCamera",
+      "name": "采集设备图像数据",
+      "desc": "",
+      "input": [
+        {
+          "id": "camera_id",
+          "name": "摄像头id",
+          "define": {
+            "type": "int",
+            "min": "0",
+            "max": "100",
+            "start": "0",
+            "step": "1",
+            "unit": ""
+          }
+        }
+      ],
+      "output": [
+        {
+          "id": "imageKey",
+          "name": "图片地址",
+          "define": {
+            "type": "string",
+            "min": "0",
+            "max": "2048"
+          }
+        }
+      ],
+      "required": false
+    }
+  ],
+  "profile": {
+    "ProductId": "OLER6OOJDJ",
+    "CategoryId": "1"
+  }
+}
