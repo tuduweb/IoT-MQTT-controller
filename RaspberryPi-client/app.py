@@ -2,10 +2,23 @@ import sys
 import time
 from explorer.explorer import QcloudExplorer
 
-logger = None
-qcloud = None
+from QiniuOss import *
 
+## params
+
+QN_ACCESS_KEY = "MoVNHexgySseNvZuQvjR-aBPsRnOST06X1YVzXW9"
+QN_SECRET_KEY = "9Ho3IMrZTF9a4c-6aX8HCdnzIiEzMtnsdrju1xAy"
+BUCKET_NAME = 'educoder-control'
+
+
+
+## init
+logger = None
+
+
+## function def
 def on_connect(flags, rc, userdata):
+    global product_id, device_name
     logger.debug("%s:flags:%d,rc:%d,userdata:%s" % (sys._getframe().f_code.co_name, flags, rc, userdata))
 
     # 数据模板初始化,自动订阅相关Topic
@@ -39,7 +52,7 @@ def on_unsubscribe(mid, userdata):
     logger.debug("%s:mid:%d,userdata:%s" % (sys._getframe().f_code.co_name, mid, userdata))
     pass
 
-## change this [DEVICE] property
+
 def on_template_property(topic, qos, payload, userdata):
     """属性回调
     接受$thing/down/property/{ProductID}/{DeviceName}的下行消息
@@ -86,36 +99,53 @@ def on_template_action(topic, qos, payload, userdata):
     print(payload)
     #qcloud.templateActionReply(qcloud.getProductID(), qcloud.getDeviceName(), qcloud.)
 
-    global qcloud
-    clientToken = payload["clientToken"]
-    reply_param = qcloud.ReplyPara()
-    reply_param.code = 0
-    reply_param.timeout_ms = 5 * 1000
-    reply_param.status_msg = "action execute success!"
-    reply_param
-    res = {
-        "imageKey": clientToken
-    }
+    # {'method': 'action', 'clientToken': '146761673::67c3c1c4-2116-45b3-baef-dc902b6d8e42', 'actionId': 'grapCamera', 'timestamp': 1648558746, 'params': {'camera_id': 0}}
+    # {'hash': 'Ft79kB3W4rUWVmBlD4aeTBH-eTij', 'key': 'pic-1648558746.jpg'} _ResponseInfo__response:<Response [200]>, exception:None, status_code:200, text_body:{"hash":"Ft79kB3W4rUWVmBlD4aeTBH-eTij","key":"pic-1648558746.jpg"},
 
-    qcloud.templateActionReply(product_id, device_name, clientToken, res, reply_param)
+    if payload.get('actionId') == 'grapCamera':
+        global q
+
+        # 文件名更改成时间+uuid的形式, 或者用clientToken
+        filekey = 'pic-%s.jpg' % int(time.time())
+        ret, info = q.UploadFile('./100kb.jpg', filekey)
+
+        print(ret, info)
+
+        global qcloud
+        clientToken = payload["clientToken"]
+        reply_param = qcloud.ReplyPara()
+        reply_param.code = 0
+        reply_param.timeout_ms = 5 * 1000
+        reply_param.status_msg = "send ok"
+        reply_param
+        res = {
+            "imageKey": filekey
+        }
+
+        qcloud.templateActionReply(product_id, device_name, clientToken, res, reply_param)
 
     pass
 
 
+## 主程序
 
 qcloud = QcloudExplorer(device_file="./device_info.json", tls=True)
 # 初始化日志
 logger = qcloud.logInit(qcloud.LoggerLevel.DEBUG, "logs/log", 1024 * 1024 * 10, 5, enable=True)
 
-# 注册mqtt回调
-qcloud.registerMqttCallback(on_connect, on_disconnect,
-                            on_message, on_publish,
-                            on_subscribe, on_unsubscribe)
 # 获取设备product id和device name
 product_id = qcloud.getProductID()
 device_name = qcloud.getDeviceName()
 
-# mqtt连接
+q = QiniuOss()
+q.SdkInit()
+
+# 注册mqtt回调
+qcloud.registerMqttCallback(on_connect, on_disconnect,
+                            on_message, on_publish,
+                            on_subscribe, on_unsubscribe)
+
+# mqtt连接, 并且进入Loop
 qcloud.connect()
 
 while(True):

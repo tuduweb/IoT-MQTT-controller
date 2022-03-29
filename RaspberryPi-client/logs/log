@@ -1679,3 +1679,693 @@
 2022-03-29 20:40:13,288.288 [client.py:2404] - DEBUG - Received PINGRESP
 2022-03-29 20:41:13,323.323 [client.py:2404] - DEBUG - Sending PINGREQ
 2022-03-29 20:41:13,397.397 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 20:42:06,505.505 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:42:06,505.505 [log.py:54] - INFO - connect with key...
+2022-03-29 20:42:06,506.506 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:42:06,684.684 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:42:06,939.939 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:42:06,940.940 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:42:06,940.940 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:42:06,940.940 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:42:06,940.940 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:42:06,940.940 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:42:06,941.941 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:42:06,941.941 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:42:06,941.941 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:42:06,941.941 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:42:07,068.068 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:42:07,068.068 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:42:07,144.144 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:42:07,145.145 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:42:07,145.145 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:42:07,145.145 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:42:07,145.145 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:42:07,146.146 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:51:38,453.453 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:51:38,453.453 [log.py:54] - INFO - connect with key...
+2022-03-29 20:51:38,455.455 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:51:38,517.517 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:51:38,679.679 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:51:38,680.680 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:51:38,680.680 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:51:38,680.680 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:51:38,680.680 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:51:38,680.680 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:51:38,681.681 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:51:38,681.681 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:51:38,681.681 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:51:38,681.681 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:51:38,752.752 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:51:38,752.752 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:51:38,780.780 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:51:38,781.781 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:51:38,781.781 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:51:38,781.781 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:51:38,781.781 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:51:38,781.781 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:55:12,100.100 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:55:12,100.100 [log.py:54] - INFO - connect with key...
+2022-03-29 20:55:12,102.102 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:55:12,186.186 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:55:12,336.336 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:55:12,336.336 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:55:12,336.336 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:55:12,336.336 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:55:12,337.337 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:55:12,337.337 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:55:12,337.337 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:55:12,337.337 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:55:12,337.337 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:55:12,338.338 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:55:12,414.414 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:55:12,414.414 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:55:12,451.451 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:55:12,451.451 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:55:12,451.451 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:55:12,452.452 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:55:12,452.452 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:55:12,452.452 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:56:02,381.381 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:56:02,381.381 [log.py:54] - INFO - connect with key...
+2022-03-29 20:56:02,383.383 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:56:02,476.476 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:56:02,553.553 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:56:02,553.553 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:56:02,553.553 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:56:02,554.554 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:56:02,554.554 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:56:02,554.554 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:56:02,554.554 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:56:02,554.554 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:56:02,555.555 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:56:02,555.555 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:56:02,597.597 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:56:02,597.597 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:56:02,630.630 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:56:02,631.631 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:56:02,631.631 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:56:02,632.632 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:56:02,632.632 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:56:02,632.632 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:56:31,894.894 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 20:56:31,895.895 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 20:56:31,895.895 [log.py:58] - ERROR - thread runnable raise exception:'NoneType' object has no attribute 'upload_token'
+2022-03-29 20:57:05,863.863 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:57:05,863.863 [log.py:54] - INFO - connect with key...
+2022-03-29 20:57:05,864.864 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:57:05,927.927 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:57:06,074.074 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:57:06,075.075 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:57:06,075.075 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:06,075.075 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:57:06,075.075 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:06,075.075 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:57:06,076.076 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:06,076.076 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:57:06,076.076 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:06,076.076 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:57:06,144.144 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:06,145.145 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:57:06,169.169 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:06,170.170 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:57:06,170.170 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:06,170.170 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:57:06,170.170 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:06,170.170 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:57:15,451.451 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:57:15,451.451 [log.py:54] - INFO - connect with key...
+2022-03-29 20:57:15,453.453 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:57:15,491.491 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:57:15,524.524 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:57:15,524.524 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:57:15,524.524 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:15,524.524 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:57:15,525.525 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:15,525.525 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:57:15,525.525 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:15,526.526 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:57:15,526.526 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:15,526.526 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:57:15,544.544 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:15,544.544 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:57:15,559.559 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:15,560.560 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:57:15,560.560 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:15,560.560 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:57:15,560.560 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:15,560.560 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:57:19,929.929 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 20:57:19,929.929 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 20:57:20,139.139 [log.py:58] - ERROR - thread runnable raise exception:'tuple' object has no attribute 'split'
+2022-03-29 20:57:53,067.067 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:57:53,067.067 [log.py:54] - INFO - connect with key...
+2022-03-29 20:57:53,068.068 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:57:53,134.134 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:57:53,288.288 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:57:53,288.288 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:57:53,289.289 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:53,289.289 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:57:53,289.289 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:53,290.290 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:57:53,290.290 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:53,290.290 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:57:53,290.290 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:57:53,291.291 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:57:53,359.359 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:53,360.360 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:57:53,388.388 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:53,389.389 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:57:53,389.389 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:53,389.389 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:57:53,389.389 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:57:53,390.390 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:57:56,268.268 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 20:57:56,268.268 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 20:57:56,445.445 [log.py:58] - ERROR - thread runnable raise exception:'tuple' object has no attribute 'split'
+2022-03-29 20:58:18,509.509 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:58:18,510.510 [log.py:54] - INFO - connect with key...
+2022-03-29 20:58:18,511.511 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:58:18,575.575 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:58:18,727.727 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:58:18,728.728 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:58:18,728.728 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:58:18,728.728 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:58:18,729.729 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:58:18,729.729 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:58:18,730.730 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:58:18,730.730 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:58:18,730.730 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:58:18,730.730 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:58:18,797.797 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:58:18,797.797 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:58:18,824.824 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:58:18,824.824 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:58:18,824.824 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:58:18,824.824 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:58:18,824.824 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:58:18,825.825 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:58:20,278.278 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 20:58:20,279.279 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 20:58:20,385.385 [log.py:58] - ERROR - thread runnable raise exception:'tuple' object has no attribute 'split'
+2022-03-29 20:59:04,211.211 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 20:59:04,211.211 [log.py:54] - INFO - connect with key...
+2022-03-29 20:59:04,212.212 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 20:59:04,279.279 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 20:59:04,429.429 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 20:59:04,429.429 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 20:59:04,429.429 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 20:59:04,430.430 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 20:59:04,430.430 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 20:59:04,430.430 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 20:59:04,430.430 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 20:59:04,431.431 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 20:59:04,431.431 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 20:59:04,431.431 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 20:59:04,500.500 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:59:04,500.500 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 20:59:04,526.526 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:59:04,526.526 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 20:59:04,526.526 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:59:04,526.526 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 20:59:04,526.526 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 20:59:04,527.527 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 20:59:06,928.928 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 20:59:06,928.928 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 20:59:07,050.050 [client.py:2404] - DEBUG - Sending PUBLISH (d0, q0, r0, m5), 'b'$thing/up/action/OLER6OOJDJ/123'', ... (172 bytes)
+2022-03-29 20:59:07,050.050 [log.py:46] - DEBUG - publish success
+2022-03-29 20:59:07,050.050 [log.py:46] - DEBUG - on_publish:mid:5,userdata:None
+2022-03-29 21:00:07,095.095 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:00:07,124.124 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:01:07,160.160 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:01:07,189.189 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:02:07,229.229 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:02:07,258.258 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:03:07,294.294 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:03:07,324.324 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:04:07,355.355 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:04:07,383.383 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:05:07,419.419 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:05:07,456.456 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:06:07,499.499 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:06:07,528.528 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:07:07,572.572 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:07:07,600.600 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:08:07,630.630 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:08:07,659.659 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:09:07,702.702 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:09:07,733.733 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:10:01,724.724 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 21:10:01,725.725 [log.py:54] - INFO - connect with key...
+2022-03-29 21:10:01,726.726 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 21:10:01,796.796 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 21:10:01,959.959 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 21:10:01,959.959 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 21:10:01,960.960 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 21:10:01,960.960 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 21:10:01,960.960 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 21:10:01,960.960 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 21:10:01,961.961 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 21:10:01,961.961 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 21:10:01,961.961 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 21:10:01,961.961 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 21:10:02,073.073 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:10:02,074.074 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 21:10:02,102.102 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:10:02,102.102 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 21:10:02,102.102 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:10:02,103.103 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 21:10:02,131.131 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:10:02,131.131 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 21:10:05,513.513 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 21:10:05,514.514 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 21:10:05,687.687 [client.py:2404] - DEBUG - Sending PUBLISH (d0, q0, r0, m5), 'b'$thing/up/action/OLER6OOJDJ/123'', ... (172 bytes)
+2022-03-29 21:10:05,687.687 [log.py:46] - DEBUG - publish success
+2022-03-29 21:10:05,688.688 [log.py:46] - DEBUG - on_publish:mid:5,userdata:None
+2022-03-29 21:11:05,723.723 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:11:05,756.756 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:12:05,795.795 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:12:05,826.826 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:13:05,867.867 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:13:05,900.900 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:14:05,937.937 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:14:05,969.969 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:15:06,013.013 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:15:06,074.074 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:16:06,110.110 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:16:06,144.144 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:17:06,184.184 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:17:06,219.219 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:18:06,257.257 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:18:06,288.288 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:19:06,337.337 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:19:06,368.368 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:20:06,405.405 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:20:06,437.437 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:21:06,466.466 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:21:06,500.500 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:22:06,536.536 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:22:06,566.566 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:23:06,607.607 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:23:06,638.638 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:24:06,678.678 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:24:06,710.710 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:25:06,748.748 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:25:06,780.780 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:25:13,982.982 [log.py:54] - INFO - current qiniu bucketname educoder-control
+2022-03-29 21:25:13,983.983 [log.py:54] - INFO - qiniu sdk init
+2022-03-29 21:25:13,983.983 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 21:25:13,983.983 [log.py:54] - INFO - connect with key...
+2022-03-29 21:25:13,984.984 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 21:25:14,048.048 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 21:25:14,213.213 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 21:25:14,213.213 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 21:25:14,214.214 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 21:25:14,214.214 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 21:25:14,214.214 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 21:25:14,215.215 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 21:25:14,215.215 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 21:25:14,215.215 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 21:25:14,215.215 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 21:25:14,216.216 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 21:25:14,283.283 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:25:14,284.284 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 21:25:14,310.310 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:25:14,310.310 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 21:25:14,311.311 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:25:14,311.311 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 21:25:14,337.337 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:25:14,337.337 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 21:25:19,221.221 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 21:25:19,221.221 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 21:25:19,381.381 [log.py:54] - INFO - qiniu update file ./100kb.jpg ; key pic-1648560319.jpg
+2022-03-29 21:25:19,382.382 [client.py:2404] - DEBUG - Sending PUBLISH (d0, q0, r0, m5), 'b'$thing/up/action/OLER6OOJDJ/123'', ... (172 bytes)
+2022-03-29 21:25:19,382.382 [log.py:46] - DEBUG - publish success
+2022-03-29 21:25:19,382.382 [log.py:46] - DEBUG - on_publish:mid:5,userdata:None
+2022-03-29 21:26:19,426.426 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:26:19,455.455 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:27:19,493.493 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:27:19,524.524 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:28:19,555.555 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:28:19,584.584 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:29:19,615.615 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:29:19,649.649 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:29:48,123.123 [log.py:54] - INFO - current qiniu bucketname educoder-control
+2022-03-29 21:29:48,124.124 [log.py:54] - INFO - qiniu sdk init
+2022-03-29 21:29:48,124.124 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 21:29:48,124.124 [log.py:54] - INFO - connect with key...
+2022-03-29 21:29:48,125.125 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 21:29:48,173.173 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 21:29:48,213.213 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 21:29:48,213.213 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 21:29:48,213.213 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 21:29:48,213.213 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 21:29:48,213.213 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 21:29:48,214.214 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 21:29:48,214.214 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 21:29:48,214.214 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 21:29:48,214.214 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 21:29:48,215.215 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 21:29:48,239.239 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:29:48,239.239 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 21:29:48,259.259 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:29:48,259.259 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 21:29:48,259.259 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:29:48,259.259 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 21:29:48,259.259 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:29:48,260.260 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 21:29:51,255.255 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 21:29:51,255.255 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 21:29:51,453.453 [log.py:54] - INFO - [1;31;40mqiniu update file ./100kb.jpg ; key pic-1648560591.jpg[0m
+2022-03-29 21:29:51,453.453 [client.py:2404] - DEBUG - Sending PUBLISH (d0, q0, r0, m5), 'b'$thing/up/action/OLER6OOJDJ/123'', ... (172 bytes)
+2022-03-29 21:29:51,453.453 [log.py:46] - DEBUG - publish success
+2022-03-29 21:29:51,454.454 [log.py:46] - DEBUG - on_publish:mid:5,userdata:None
+2022-03-29 21:30:42,504.504 [log.py:54] - INFO - current qiniu bucketname educoder-control
+2022-03-29 21:30:42,504.504 [log.py:54] - INFO - qiniu sdk init
+2022-03-29 21:30:42,504.504 [log.py:46] - DEBUG - LoopThread thread enter
+2022-03-29 21:30:42,504.504 [log.py:54] - INFO - connect with key...
+2022-03-29 21:30:42,506.506 [log.py:46] - DEBUG - connect_async (OLER6OOJDJ.iotcloud.tencentdevices.com:8883)
+2022-03-29 21:30:42,567.567 [client.py:2404] - DEBUG - Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'OLER6OOJDJ123'
+2022-03-29 21:30:42,722.722 [client.py:2404] - DEBUG - Received CONNACK (0, 0)
+2022-03-29 21:30:42,723.723 [log.py:46] - DEBUG - on_connect:flags:0,rc:0,userdata:None
+2022-03-29 21:30:42,723.723 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m1) [(b'$thing/down/property/OLER6OOJDJ/123', 0)]
+2022-03-29 21:30:42,723.723 [log.py:46] - DEBUG - subscribe success topic:$thing/down/property/OLER6OOJDJ/123
+2022-03-29 21:30:42,724.724 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m2) [(b'$thing/down/action/OLER6OOJDJ/123', 0)]
+2022-03-29 21:30:42,724.724 [log.py:46] - DEBUG - subscribe success topic:$thing/down/action/OLER6OOJDJ/123
+2022-03-29 21:30:42,724.724 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m3) [(b'$thing/down/event/OLER6OOJDJ/123', 0)]
+2022-03-29 21:30:42,724.724 [log.py:46] - DEBUG - subscribe success topic:$thing/down/event/OLER6OOJDJ/123
+2022-03-29 21:30:42,724.724 [client.py:2404] - DEBUG - Sending SUBSCRIBE (d0, m4) [(b'$thing/down/service/OLER6OOJDJ/123', 0)]
+2022-03-29 21:30:42,724.724 [log.py:46] - DEBUG - subscribe success topic:$thing/down/service/OLER6OOJDJ/123
+2022-03-29 21:30:42,793.793 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:30:42,793.793 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:2,userdata:None
+2022-03-29 21:30:42,818.818 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:30:42,818.818 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:3,userdata:None
+2022-03-29 21:30:42,818.818 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:30:42,819.819 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:1,userdata:None
+2022-03-29 21:30:42,819.819 [client.py:2404] - DEBUG - Received SUBACK
+2022-03-29 21:30:42,819.819 [log.py:46] - DEBUG - on_subscribe:mid:0,granted_qos:4,userdata:None
+2022-03-29 21:30:46,459.459 [client.py:2404] - DEBUG - Received PUBLISH (d0, q0, r0, m0), '$thing/down/action/OLER6OOJDJ/123', ...  (156 bytes)
+2022-03-29 21:30:46,460.460 [log.py:46] - DEBUG - on_template_action:mid:$thing/down/action/OLER6OOJDJ/123,userdata:None
+2022-03-29 21:30:46,585.585 [log.py:54] - INFO - [1;34;47mqiniu update file ./100kb.jpg ; key pic-1648560646.jpg[0m
+2022-03-29 21:30:46,585.585 [client.py:2404] - DEBUG - Sending PUBLISH (d0, q0, r0, m5), 'b'$thing/up/action/OLER6OOJDJ/123'', ... (172 bytes)
+2022-03-29 21:30:46,585.585 [log.py:46] - DEBUG - publish success
+2022-03-29 21:30:46,586.586 [log.py:46] - DEBUG - on_publish:mid:5,userdata:None
+2022-03-29 21:31:46,628.628 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:31:46,658.658 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:32:46,707.707 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:32:46,734.734 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:33:46,779.779 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:33:46,806.806 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:34:46,844.844 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:34:46,871.871 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:35:46,912.912 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:35:46,973.973 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:36:47,017.017 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:36:47,044.044 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:37:47,080.080 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:37:47,107.107 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:38:47,138.138 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:38:47,170.170 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:39:47,207.207 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:39:47,235.235 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:40:47,266.266 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:40:47,293.293 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:41:47,322.322 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:41:47,349.349 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:42:47,381.381 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:42:47,410.410 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:43:47,448.448 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:43:47,562.562 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:44:47,602.602 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:44:47,633.633 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:45:47,671.671 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:45:47,699.699 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:46:47,734.734 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:46:47,762.762 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:47:47,875.875 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:47:47,905.905 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:48:47,938.938 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:48:47,966.966 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:49:48,006.006 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:49:48,109.109 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:50:48,146.146 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:50:48,180.180 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:51:48,217.217 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:51:48,244.244 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:52:48,275.275 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:52:48,305.305 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:53:48,341.341 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:53:48,368.368 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:54:48,397.397 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:54:48,425.425 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:55:48,457.457 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:55:48,487.487 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:56:48,527.527 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:56:48,555.555 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:57:48,600.600 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:57:48,628.628 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:58:48,663.663 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:58:48,691.691 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 21:59:48,731.731 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 21:59:48,761.761 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:00:48,806.806 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:00:48,835.835 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:01:48,871.871 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:01:48,898.898 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:02:48,937.937 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:02:48,968.968 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:03:49,008.008 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:03:49,037.037 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:04:49,072.072 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:04:49,100.100 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:05:49,143.143 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:05:49,172.172 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:06:49,206.206 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:06:49,235.235 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:07:49,270.270 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:07:49,301.301 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:08:49,335.335 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:08:49,367.367 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:09:49,402.402 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:09:49,432.432 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:10:49,467.467 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:10:49,496.496 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:11:49,534.534 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:11:49,566.566 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:12:49,599.599 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:12:49,626.626 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:13:49,656.656 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:13:49,686.686 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:14:49,721.721 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:14:49,748.748 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:15:49,779.779 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:15:49,807.807 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:16:49,823.823 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:16:49,851.851 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:17:49,882.882 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:17:49,910.910 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:18:49,941.941 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:18:49,969.969 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:19:50,006.006 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:19:50,036.036 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:20:50,069.069 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:20:50,097.097 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:21:50,131.131 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:21:50,160.160 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:22:50,194.194 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:22:50,223.223 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:23:50,251.251 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:23:50,376.376 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:24:50,410.410 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:24:50,438.438 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:25:50,460.460 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:25:50,490.490 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:26:50,525.525 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:26:50,554.554 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:27:50,588.588 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:27:50,618.618 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:28:50,660.660 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:28:50,691.691 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:29:50,725.725 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:29:50,755.755 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:30:50,788.788 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:30:50,815.815 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:31:50,859.859 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:31:50,886.886 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:32:50,913.913 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:32:50,940.940 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:33:50,977.977 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:33:51,004.004 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:34:51,045.045 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:34:51,074.074 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:35:51,108.108 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:35:51,138.138 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:36:51,167.167 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:36:51,198.198 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:37:51,237.237 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:37:51,265.265 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:38:51,307.307 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:38:51,337.337 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:39:51,380.380 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:39:51,411.411 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:40:51,448.448 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:40:51,478.478 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:41:51,509.509 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:41:51,537.537 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:42:51,571.571 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:42:51,600.600 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:43:51,636.636 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:43:51,665.665 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:44:51,726.726 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:44:51,756.756 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:45:51,796.796 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:45:51,826.826 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:46:51,870.870 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:46:51,896.896 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:47:51,936.936 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:47:51,965.965 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:48:51,997.997 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:48:52,026.026 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:49:52,063.063 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:49:52,091.091 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:50:52,130.130 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:50:52,159.159 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:51:52,193.193 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:51:52,223.223 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:52:52,268.268 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:52:52,297.297 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:53:52,346.346 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:53:52,373.373 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:54:52,414.414 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:54:52,444.444 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:55:52,479.479 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:55:52,508.508 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:56:52,551.551 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:56:52,580.580 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:57:52,622.622 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:57:52,649.649 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:58:52,697.697 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:58:52,727.727 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 22:59:52,770.770 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 22:59:52,798.798 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:00:52,839.839 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:00:52,870.870 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:01:52,912.912 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:01:52,940.940 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:02:52,982.982 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:02:53,057.057 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:03:53,102.102 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:03:53,131.131 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:04:53,174.174 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:04:53,206.206 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:05:53,230.230 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:05:53,259.259 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:06:53,296.296 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:06:53,340.340 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:07:53,382.382 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:07:53,411.411 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:08:53,453.453 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:08:53,481.481 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:09:53,522.522 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:09:53,564.564 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:10:53,610.610 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:10:53,640.640 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:11:53,680.680 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:11:53,709.709 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:12:53,760.760 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:12:53,789.789 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:13:53,823.823 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:13:53,853.853 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:14:53,888.888 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:14:53,918.918 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:15:53,946.946 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:15:53,975.975 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:16:54,020.020 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:16:54,071.071 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:17:54,118.118 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:17:54,145.145 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:18:54,175.175 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:18:54,204.204 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:19:54,244.244 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:19:54,271.271 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:20:54,298.298 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:20:54,333.333 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:21:54,374.374 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:21:54,402.402 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:22:54,442.442 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:22:54,506.506 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:23:54,550.550 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:23:54,580.580 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:24:54,618.618 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:24:54,645.645 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:25:54,685.685 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:25:54,728.728 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:26:54,765.765 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:26:54,792.792 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:27:54,827.827 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:27:54,856.856 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:28:54,882.882 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:28:54,940.940 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:29:54,972.972 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:29:55,003.003 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:30:55,025.025 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:30:55,052.052 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:31:55,090.090 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:31:55,120.120 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:32:55,165.165 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:32:55,193.193 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:33:55,229.229 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:33:55,261.261 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:34:55,289.289 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:34:55,318.318 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:35:55,344.344 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:35:55,372.372 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:36:55,403.403 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:36:55,430.430 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:37:55,472.472 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:37:55,503.503 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:38:55,536.536 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:38:55,592.592 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:39:55,627.627 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:39:55,654.654 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:40:55,687.687 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:40:55,714.714 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:41:55,749.749 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:41:55,776.776 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:42:55,781.781 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:42:55,818.818 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:43:55,846.846 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:43:55,873.873 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:44:55,905.905 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:44:55,934.934 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:45:55,972.972 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:45:56,004.004 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:46:56,041.041 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:46:56,069.069 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:47:56,111.111 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:47:56,140.140 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:48:56,169.169 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:48:56,196.196 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:49:56,228.228 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:49:56,257.257 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:50:56,286.286 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:50:56,315.315 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:51:56,350.350 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:51:56,380.380 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:52:56,413.413 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:52:56,444.444 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:53:56,477.477 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:53:56,504.504 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:54:56,526.526 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:54:56,554.554 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:55:56,624.624 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:55:56,652.652 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:56:56,706.706 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:56:56,736.736 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:57:56,799.799 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:57:56,829.829 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:58:56,892.892 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:58:56,920.920 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-29 23:59:56,970.970 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-29 23:59:56,997.997 [client.py:2404] - DEBUG - Received PINGRESP
+2022-03-30 00:00:57,031.031 [client.py:2404] - DEBUG - Sending PINGREQ
+2022-03-30 00:00:57,059.059 [client.py:2404] - DEBUG - Received PINGRESP

@@ -2,8 +2,8 @@ import qiniu
 import time
 import sys
 
-access_key = ""
-secret_key = ""
+access_key = "MoVNHexgySseNvZuQvjR-aBPsRnOST06X1YVzXW9"
+secret_key = "9Ho3IMrZTF9a4c-6aX8HCdnzIiEzMtnsdrju1xAy"
 
 q = qiniu.Auth(access_key, secret_key)
 
