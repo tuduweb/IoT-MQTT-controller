@@ -7,33 +7,7 @@ from qiniu.http import ResponseInfo
 from hub.utils.providers import LoggerProvider
 from typing import Tuple
 
-
-QN_ACCESS_KEY = "MoVNHexgySseNvZuQvjR-aBPsRnOST06X1YVzXW9"
-QN_SECRET_KEY = "9Ho3IMrZTF9a4c-6aX8HCdnzIiEzMtnsdrju1xAy"
-BUCKET_NAME = 'educoder-control'
-
-
-# q = qiniu.Auth(QN_ACCESS_KEY, QN_SECRET_KEY)
-
-# #要上传的空间
-# bucket_name = 'educoder-control'
-
-# #上传后保存的文件名
-# key = '1000kb123.jpg'
-# #生成上传 Token，可以指定过期时间等
-# token = q.upload_token(bucket_name, key, 3600)
-# #要上传文件的本地路径
-# localfile = './1000kb.jpg'
-
-# print(int(time.time()))
-# ret, info = qiniu.put_file(token, key, localfile, version='v2') 
-# print(int(time.time()))
-
-# print(info)
-# print(ret)
-# assert ret['key'] == key
-# assert ret['hash'] == qiniu.etag(localfile)
-
+from AppConfig import AppConfigProvider
 
 
 class QiniuOss:
@@ -41,9 +15,15 @@ class QiniuOss:
 
         self.q = None
 
-        self.QN_ACCESS_KEY = "MoVNHexgySseNvZuQvjR-aBPsRnOST06X1YVzXW9"
-        self.QN_SECRET_KEY = "9Ho3IMrZTF9a4c-6aX8HCdnzIiEzMtnsdrju1xAy"
-        self.BUCKET_NAME = 'educoder-control'
+        self.__config_provider = AppConfigProvider()
+
+        self.config = self.__config_provider.qiniu_config
+
+        self.QN_ACCESS_KEY = self.config.get("QN_ACCESS_KEY")
+        self.QN_SECRET_KEY = self.config.get("QN_SECRET_KEY")
+        self.BUCKET_NAME = self.config.get("BUCKET_NAME")
+
+        # self.devicePath = 
 
         self.__log_provider = LoggerProvider()
         self.__logger = self.__log_provider.logger
@@ -51,7 +31,7 @@ class QiniuOss:
         pass
 
     def SdkInit(self) -> int:
-        self.q = qiniu.Auth(QN_ACCESS_KEY, QN_SECRET_KEY)
+        self.q = qiniu.Auth(self.QN_ACCESS_KEY, self.QN_SECRET_KEY)
 
         self.__logger.info('qiniu sdk init')
 
@@ -61,6 +41,6 @@ class QiniuOss:
         token = self.q.upload_token(self.BUCKET_NAME, key, 3600)
         ret, info = qiniu.put_file(token, key, localfile, version='v2')
 
-        self.__logger.info('\033[1;34;47mqiniu update file {} ; key {}\033[0m'.format(localfile, key))
-        
+        self.__logger.info('\033[1;36m qiniu update file {} ; key {}\033[0m'.format(localfile, key))
+
         return ret, info

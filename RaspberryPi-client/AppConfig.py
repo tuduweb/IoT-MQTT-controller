@@ -1,9 +1,11 @@
-from hub.utils.providers import LoggerProvider
+from hub.utils.providers import LoggerProvider, SingletonType
 import json
+import os
 
+class AppConfigProvider(metaclass=SingletonType):
+    def __init__(self) -> None:
 
-class ConfigProvider(object):
-    def __init__(self, file_path) -> None:
+        file_path = os.path.join(os.path.split(os.path.realpath(__file__))[0], "./app_settings.json")
 
         self.__file_path = file_path
 
@@ -19,7 +21,8 @@ class ConfigProvider(object):
 
         with open(file_path, 'r', encoding='utf-8') as f:
             self.__json_data = json.loads(f.read())
-            self.__qiniu_config = json.loads(self.__json_data['qiniu'])
+            self.__qiniu_config = self.__json_data['qiniu']
+            
             # self.__device_name = self.__json_data['deviceName']
             # self.__product_id = self.__json_data['productId']
             # self.__product_secret = self.__json_data['productSecret']
@@ -29,9 +32,11 @@ class ConfigProvider(object):
             # self.__private_key_file = self.__json_data['cert_deviceinfo']['devPrivateKeyFile']
             # self.__region = self.__json_data["region"]
         
-        
         pass
 
     @property
     def qiniu_config(self):
         return self.__qiniu_config
+
+    def __new__(cls, *args, **kwargs):
+        return object.__new__(cls)

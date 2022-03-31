@@ -1,59 +1,15 @@
 {
   "version": "1.0",
-  "properties": [
-    {
-      "id": "imageUrl",
-      "name": "图片地址",
-      "desc": "用于传输存储图片地址",
-      "mode": "rw",
-      "define": {
-        "type": "string",
-        "min": "0",
-        "max": "2048"
-      },
-      "required": false
-    },
-    {
-      "id": "image",
-      "name": "image",
-      "desc": "回传图片地址",
-      "mode": "r",
-      "define": {
-        "type": "string",
-        "min": "0",
-        "max": "2048"
-      },
-      "required": false
-    }
-  ],
-  "events": [
-    {
-      "id": "last_image",
-      "name": "更新最新图片",
-      "desc": "",
-      "type": "info",
-      "params": [
-        {
-          "id": "image",
-          "name": "最新图片",
-          "define": {
-            "type": "string",
-            "min": "0",
-            "max": "2048"
-          }
-        }
-      ],
-      "required": false
-    }
-  ],
+  "properties": [],
+  "events": [],
   "actions": [
     {
       "id": "grapCamera",
-      "name": "采集设备图像数据",
+      "name": "抓取摄像头图像行为",
       "desc": "",
       "input": [
         {
-          "id": "camera_id",
+          "id": "cameraId",
           "name": "摄像头id",
           "define": {
             "type": "int",
@@ -63,12 +19,33 @@
             "step": "1",
             "unit": ""
           }
+        },
+        {
+          "id": "cbType",
+          "name": "回调种类",
+          "define": {
+            "type": "int",
+            "min": "0",
+            "max": "100",
+            "start": "0",
+            "step": "1",
+            "unit": ""
+          }
+        },
+        {
+          "id": "cbParam",
+          "name": "回调参数",
+          "define": {
+            "type": "string",
+            "min": "0",
+            "max": "2048"
+          }
         }
       ],
       "output": [
         {
           "id": "imageKey",
-          "name": "图片地址",
+          "name": "图像key",
           "define": {
             "type": "string",
             "min": "0",
@@ -80,7 +57,7 @@
     }
   ],
   "profile": {
-    "ProductId": "OLER6OOJDJ",
-    "CategoryId": "1"
+    "ProductId": "5EMLWO6P1W",
+    "CategoryId": "161"
   }
 }

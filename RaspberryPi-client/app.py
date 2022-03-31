@@ -4,13 +4,9 @@ from explorer.explorer import QcloudExplorer
 
 from QiniuOss import *
 
-## params
+import os
 
-QN_ACCESS_KEY = "MoVNHexgySseNvZuQvjR-aBPsRnOST06X1YVzXW9"
-QN_SECRET_KEY = "9Ho3IMrZTF9a4c-6aX8HCdnzIiEzMtnsdrju1xAy"
-BUCKET_NAME = 'educoder-control'
-
-
+_currentFilePath = os.path.split(os.path.realpath(__file__))[0]
 
 ## init
 logger = None
@@ -24,7 +20,9 @@ def on_connect(flags, rc, userdata):
     # 数据模板初始化,自动订阅相关Topic
     qcloud.templateInit(product_id, device_name, on_template_property,
                             on_template_action, on_template_event, on_template_service)
-    qcloud.templateSetup(product_id, device_name, "./template_config.json")
+
+    _templateConfigFile = os.path.join(_currentFilePath, "./device_info.json")
+    qcloud.templateSetup(product_id, device_name, _templateConfigFile)
 
     pass
 
@@ -104,20 +102,22 @@ def on_template_action(topic, qos, payload, userdata):
 
     if payload.get('actionId') == 'grapCamera':
         global q
+        global qcloud
 
         # 文件名更改成时间+uuid的形式, 或者用clientToken
         filekey = 'pic-%s.jpg' % int(time.time())
-        ret, info = q.UploadFile('./100kb.jpg', filekey)
+
+        # concat file path
+        _updateFile = os.path.join(_currentFilePath, "./100kb.jpg")
+        ret, info = q.UploadFile(_updateFile, qcloud.getDeviceName() + "/" + filekey)
 
         print(ret, info)
 
-        global qcloud
         clientToken = payload["clientToken"]
         reply_param = qcloud.ReplyPara()
         reply_param.code = 0
         reply_param.timeout_ms = 5 * 1000
-        reply_param.status_msg = "send ok"
-        reply_param
+        reply_param.status_msg = "GrapCameraSuccess"
         res = {
             "imageKey": filekey
         }
@@ -128,10 +128,12 @@ def on_template_action(topic, qos, payload, userdata):
 
 
 ## 主程序
-
-qcloud = QcloudExplorer(device_file="./device_info.json", tls=True)
+_deviceFile = os.path.join(_currentFilePath, "./device_info.json")
+qcloud = QcloudExplorer(device_file= _deviceFile, tls=True)
 # 初始化日志
-logger = qcloud.logInit(qcloud.LoggerLevel.DEBUG, "logs/log", 1024 * 1024 * 10, 5, enable=True)
+
+_logFile = os.path.join(_currentFilePath, "logs/log")
+logger = qcloud.logInit(qcloud.LoggerLevel.DEBUG, _logFile, 1024 * 1024 * 10, 5, enable=True)
 
 # 获取设备product id和device name
 product_id = qcloud.getProductID()
