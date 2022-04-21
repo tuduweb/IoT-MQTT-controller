@@ -132,7 +132,7 @@ _deviceFile = os.path.join(_currentFilePath, "./device_info.json")
 qcloud = QcloudExplorer(device_file= _deviceFile, tls=True)
 # 初始化日志
 
-_logFile = os.path.join(_currentFilePath, "logs/log")
+_logFile = os.path.join(_currentFilePath, "logs/app.log")
 logger = qcloud.logInit(qcloud.LoggerLevel.DEBUG, _logFile, 1024 * 1024 * 10, 5, enable=True)
 
 # 获取设备product id和device name
