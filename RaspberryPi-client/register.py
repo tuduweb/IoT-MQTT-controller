@@ -1,10 +1,13 @@
 from explorer.explorer import QcloudExplorer
-import uuid
 import os
 
 _currentFilePath = os.path.split(os.path.realpath(__file__))[0]
 
+# import uuid
 # mac = uuid.UUID(int=uuid.getnode()).hex[-12:]
+
+# 构造device_info.json
+
 
 ## 主程序
 _deviceFile = os.path.join(_currentFilePath, "./device_info.json")

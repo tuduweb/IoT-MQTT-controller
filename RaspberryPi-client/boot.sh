@@ -11,14 +11,18 @@ if [ $i -lt 1 ]; then
         i+=1
         sed -i "1c ${i}" logs/start.log
     fi    
-else
+fi
+
+if [ $i -gt 0 ]; then
     i+=1
     echo "$i"
     sed -i "1c ${i}" logs/start.log
-    #touch /home/pi/testboot.txt
-    #chmod 777 /home/pi/testboot.txt
-    #echo "hello pi~" >> /home/pi/testboot.txt
 
-    #python3 /home/pi/remoteControlApp/app.py > /tmp/appLog.out 2>&1
+    rm /tmp/appLog.out > /dev/null 2>&1
+    touch /tmp/appLog.out
+    chmod 777 /tmp/appLog.out
+    echo "hello pi~" >> /tmp/appLog.out
+
+    python3 /home/pi/remoteControlApp/app.py > /tmp/appLog.out 2>&1
     python3 ./app.py > /tmp/appLog.out 2>&1
 fi

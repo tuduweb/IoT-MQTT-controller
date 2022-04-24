@@ -17,11 +17,13 @@ def on_connect(flags, rc, userdata):
     global product_id, device_name
     logger.debug("%s:flags:%d,rc:%d,userdata:%s" % (sys._getframe().f_code.co_name, flags, rc, userdata))
 
+    # 拉取动态参数, 并更新.. 启动定时操作
+
     # 数据模板初始化,自动订阅相关Topic
     qcloud.templateInit(product_id, device_name, on_template_property,
                             on_template_action, on_template_event, on_template_service)
 
-    _templateConfigFile = os.path.join(_currentFilePath, "./device_info.json")
+    _templateConfigFile = os.path.join(_currentFilePath, "./template_config.json")
     qcloud.templateSetup(product_id, device_name, _templateConfigFile)
 
     pass
